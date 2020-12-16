@@ -6,6 +6,19 @@
 
 This is a simulation of a digital wallet & referral platform written in Laravel and Vue.js
 
+## Features
+
+- Create Account
+- Create Account using Referral Code
+- Earn 1000bucks for Referral Code Registration
+- View Wallet Balance
+- Transfer from Wallet Balance (Instant)
+- Schedule Transfer (Future)
+- KYC To Increase Transfer Limits
+- Add ID Card
+
+--------------------
+
 ## Setup Locally
 
 To Run this application locally, you would need to follow this guide step by step.
@@ -76,3 +89,49 @@ Next you want to be sure you have the application keys generated:
 ```bash
 php artisan key:generate
 ```
+
+## Run Migrations
+
+You should run the database migrations right after:
+
+```bash
+php artisan migrate:fresh
+```
+
+## Vue App
+
+Generate a production build for the Vue app with:
+
+```bash
+npm run prod
+```
+
+## Laravel server
+
+Start the laravel server with:
+
+```bash
+php artisan serve
+```
+
+This should start the application on PORT `8000`. `localhost:8000`
+
+## Run tests
+
+To Run tests you need to first run the migration for the test database.
+
+> Note: For speed of testing we're using an sqlite DB, so you won't need to setup another database.
+
+### Run Test Migration
+
+```bash
+php artisan migrate --env=testing
+```
+
+### Run Tests
+
+```bash
+php artisan test
+```
+
+![testimage](https://raw.githubusercontent.com/MartinsOnuoha/credpal-transact-simulator/master/public/6.png)

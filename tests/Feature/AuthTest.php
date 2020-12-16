@@ -8,7 +8,6 @@ use Tests\TestCase;
 
 class AuthTest extends TestCase
 {
-    use RefreshDatabase;
     /**
      * A basic feature test example.
      *
@@ -17,7 +16,6 @@ class AuthTest extends TestCase
     public function testlandingPage()
     {
         $response = $this->get('/');
-        $response->assertSee('Login');
         $response->assertStatus(200);
     }
 
@@ -111,15 +109,40 @@ class AuthTest extends TestCase
         ]);
 
         $response->assertStatus(201);
-            // ->assertJson([
-            //     "message" => 'The given data was invalid.',
-            //     "errors" => [
-            //         "password" => [
-            //             "The password confirmation does not match."
-            //         ]
-            //     ]
-            // ]);
     }
 
+    public function testLoginEmailRequired()
+    {
+        $response = $this->postJson('/auth/login', [
+            'password' => 'qqqqqq'
+        ]);
+
+        $response->assertStatus(422)
+            ->assertJson([
+                "message" => 'The given data was invalid.',
+                "errors" => [
+                    "email" => [
+                        "The email field is required."
+                    ]
+                ]
+            ]);
+    }
+
+    public function testLoginPasswordRequired()
+    {
+        $response = $this->postJson('/auth/login', [
+            'email' => 'mars@app.com'
+        ]);
+
+        $response->assertStatus(422)
+            ->assertJson([
+                "message" => 'The given data was invalid.',
+                "errors" => [
+                    "password" => [
+                        "The password field is required."
+                    ]
+                ]
+            ]);
+    }
 
 }
