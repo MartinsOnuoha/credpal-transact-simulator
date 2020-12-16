@@ -1,10 +1,12 @@
-# Wallet Service Simulator
+# Wallet Service Simulator 💵
 
 ![headerimage](https://raw.githubusercontent.com/MartinsOnuoha/credpal-transact-simulator/master/public/3.png)
 
 ## About the Application
 
 This is a simulation of a digital wallet & referral platform written in Laravel and Vue.js
+
+Take [a Quick Look](https://shrouded-bastion-06461.herokuapp.com/) at the application 👀
 
 ## Features
 
