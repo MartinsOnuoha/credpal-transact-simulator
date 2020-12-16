@@ -19,6 +19,14 @@ This is a simulation of a digital wallet & referral platform written in Laravel 
 
 --------------------
 
+## Technologies
+
+- PHP
+- Laravel
+- Vue.js
+
+![lang](https://raw.githubusercontent.com/MartinsOnuoha/credpal-transact-simulator/master/public/7.png)
+
 ## Setup Locally
 
 To Run this application locally, you would need to follow this guide step by step.
