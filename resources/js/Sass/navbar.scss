@@ -1,0 +1,29 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: #FFF;
+  &__logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: url('https://visme.co/blog/wp-content/uploads/2017/08/40-Creative-Logo-Designs-to-Inspire-You-SlingShot.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    li {
+      margin: 10px;
+      list-style-type: none;
+      font-size: 17px;
+      a {
+        text-decoration: none;
+        color: #555555;
+      }
+    }
+  }
+}

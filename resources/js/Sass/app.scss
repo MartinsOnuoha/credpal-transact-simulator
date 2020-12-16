@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body, html, #app, .app {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.app {
+  height: inherit;
+  width: inherit;
+  background-color: #eceff1ac;
+}
+.text {
+  color: #595959;
+}
+.cursor {
+  cursor: pointer;
+}
+.text-light {
+  font-weight: 300;
+}
+.shadow-1 {
+  box-shadow: 0 1px 1px rgba(79, 79, 79, 0.0), 0 1px 10px rgba(65, 65, 65, 0.1);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.black-border {
+  border-left: 10px solid #2b2b2b;
+}
+.pa {
+  padding: 50px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+input {
+  padding: 10px;
+  border: 1px solid #dad8d8;
+  border-radius: 3px;
+}
+.btn {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border: 7px;
+}
+button {
+  border-radius: 3px;
+}
+.btn--success {
+  background-color: #3ED086;
+  color: #FFF;
+}
+.fullwidth {
+  width: 100%;
+}
+.halfwidth {
+  width: 50%;
+}
+.between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.btn--black {
+  background-color: #2b2b2b;
+  color: #FFF;
+}
+.action {
+  margin-top: 3rem;
+}
+.mt-3 {
+  margin-top: 3rem;
+}
