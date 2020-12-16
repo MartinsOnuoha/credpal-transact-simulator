@@ -1,10 +1,12 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://visme.co/blog/wp-content/uploads/2017/08/40-Creative-Logo-Designs-to-Inspire-You-SlingShot.gif" style="border-radius: 50%" width="400"></a></p>
+# Wallet Service Simulator
+
+![headerimage](https://raw.githubusercontent.com/MartinsOnuoha/credpal-transact-simulator/master/public/3.png)
 
 ## About the Application
 
 This is a simulation of a digital wallet & referral platform written in Laravel and Vue.js
 
-## SETUP LOCALLY
+## Setup Locally
 
 To Run this application locally, you would need to follow this guide step by step.
 
