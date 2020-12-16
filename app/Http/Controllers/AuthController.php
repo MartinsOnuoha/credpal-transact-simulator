@@ -44,7 +44,7 @@ class AuthController extends Controller
             'error' => false,
             'token' => $token->plainTextToken,
             'user' => $user,
-        ]);
+        ], 201);
     }
     /**
      * login existing user
@@ -67,7 +67,7 @@ class AuthController extends Controller
                 'error' => false,
                 'token' => $token->plainTextToken,
                 'user' => $user
-            ]);
+            ], 200);
         }
         return response()->json([
             'error' => true,
